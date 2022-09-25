@@ -1,19 +1,23 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
-import Home from './components/Home';
-import Aboutus from './components/Aboutus';
-import Service from './components/Service';
-import Contact from './components/Contact';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Aboutus from './components/About/Aboutus';
+import Contact from './components/Contact/Contact';
+import Service from './components/Service/Service';
+import Footer from './components/Footer/Footer';
+import Canada from './assets/canada_1.jpeg';
+import Australia from './assets/austa_1.jpeg';
+
+import London from './assets/london_1.jpeg';
+
 
 function App() {
   return (
     <>
-      <nav>
-        <li> <Link to="/">Home</Link> {" "}</li>
-        <li> <Link to="about">About</Link></li>
-        <li><Link to="service">Service</Link></li>
-        <li><Link to="contact">Contact</Link></li>
-      </nav>
+   
+    <Navbar />
+    <div className="container">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<Aboutus />} />
@@ -21,6 +25,10 @@ function App() {
       <Route path="/contact" element={<Contact />} />
    
     </Routes>
+
+    </div>
+ 
+    <Footer />
     
     </>
   );
