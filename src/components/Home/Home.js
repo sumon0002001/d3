@@ -10,7 +10,7 @@ const Home = () => {
 
   const autoScroll = true;
   let slideInterval;
-  let intervalTime = 4000;
+  let intervalTime = 6000;
 
   function auto () {
     slideInterval = setInterval(nextSlide, intervalTime);
