@@ -10,14 +10,15 @@ import Canada from './assets/canada_1.jpeg';
 import Australia from './assets/austa_1.jpeg';
 
 import London from './assets/london_1.jpeg';
+import UpperNavbar from './components/UpperNavbar/UpperNavbar';
 
 
 function App() {
   return (
     <>
-   
+   <UpperNavbar />
     <Navbar />
-    <div className="container">
+    <div >
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<Aboutus />} />
