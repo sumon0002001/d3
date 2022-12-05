@@ -106,3 +106,25 @@
     background: white;
     width: 50%;
   }
+
+  .advisory {
+    display: flex;
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  
+  .left {
+    padding: 1rem;
+  }
+
+  .passport {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .right {
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+
+  
